@@ -1,0 +1,18 @@
+version = "%%VERSION_NUM%%"
+description = "Win32 named pipes"
+requires = "unix"
+archive(byte)   = "named-pipe.cma"
+archive(native) = "named-pipe.cmxa"
+plugin(byte)    = "named-pipe.cma"
+plugin(native)  = "named-pipe.cmxs"
+
+package "lwt" (
+ version = "%%VERSION_NUM%%"
+ description = "Win32 named pipes"
+ requires = "lwt.unix named-pipe"
+ archive(byte)   = "named-pipe_lwt.cma"
+ plugin(byte)    = "named-pipe_lwt.cma"
+ archive(native) = "named-pipe_lwt.cmxa"
+ plugin(native)  = "named-pipe_lwt.cmxs"
+ exists_if = "named-pipe_lwt.cma"
+)
