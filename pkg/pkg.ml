@@ -13,7 +13,7 @@ let build = Pkg.build ~cmd:Ocb_stubblr_topkg.cmd ()
 let () =
   Pkg.describe ~opams:[opam] ~build "named-pipe" @@ fun c ->
   Ok [
-    Pkg.mllib "lib/named_pipe.mllib";
+    Pkg.mllib "lib/named-pipe.mllib";
     Pkg.clib  "lib/libnamed_pipe.clib";
     Pkg.mllib "lwt/named_pipe_lwt.mllib";
     Pkg.clib  "lwt/libnamed_pipe_lwt.clib";

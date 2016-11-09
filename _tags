@@ -8,7 +8,7 @@ true: package(bytes unix)
 <src/*>: package(lwt.unix cmdliner)
 <src/*>: use_named_pipe, use_named_pipe_lwt
 
-<lib/named_pipe.cm{,x}a>    : link_stubs(lib/libnamed_pipe)
+<lib/named-pipe.cm{,x}a>    : link_stubs(lib/libnamed_pipe)
 <lwt/named_pipe_lwt.cm{,x}a>: link_stubs(lwt/libnamed_pipe_lwt)
 
 <lib_test/*>: package(lwt.unix alcotest), use_named_pipe, use_named_pipe_lwt
